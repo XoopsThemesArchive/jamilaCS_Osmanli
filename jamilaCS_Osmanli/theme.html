@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<style>
+.drop { position: absolute; width: 3;  filter: flipV(), flipH(); font-size: 40; color: blue }
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta http-equiv="Content-Language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+
+
+
+
+
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body bgcolor="#F2F4F7">
+<table border="0" align="center" cellpadding="0" cellspacing="0" id="okvir">
+  <tr>
+    <td>
+		<table  width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td id="headerlogo">
+		  <table  class="head_main" width="100%" border="0" cellpadding="0" cellspacing="0">
+		   <tr> 
+          <td ><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>logo/logo.jpg" alt="Joyeuses Fetes" border="0" /></a></td>
+            </tr></table>
+		<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+
+<tr>
+        <td class="menu_top" align="center">
+	
+			<a href="<{$xoops_url}>/modules/news/"><span lang="fr">Haberler</span></a>  * 
+		<a href="<{$xoops_url}>/modules/contact/"><span lang="fr">Ýletiþim</span></a> 
+	
+		</td>
+        <td class="menu_top_ura" align="center"><span id="clock"></span> 
+		<script language="JavaScript" type="text/javascript" src="<{$xoops_url}>/themes/ND_Xmas
+/images/clock.js">
+      </script> &nbsp;</td>
+      </tr>
+    </table>
+		</td>
+        </tr>
+      </table>
+    <table border="0" cellpadding="0" cellspacing="0" >
+<td width="171" id="leftcolumn"> 
+     
+          <{foreach item=block from=$xoops_lblocks}> <div class="<{cycle values="blockTitle"}>"><{$block.title}></div>
+          <div class="blockContent"><{$block.content}></div>
+		  <img src="<{$xoops_imageurl}>images/160.gif" width="160" height="1" alt="" />
+          <{/foreach}> 
+     
+          <br /> <br />
+          </td>
+        <td width="369" id="centercolumn"> 
+   
+          <{if $xoops_showcblock == 1}> <table class="sadrzaj" cellspacing="0">
+            <tr> 
+              <td id="centerCcolumn" colspan="2"> 
+          
+                <{foreach item=block from=$xoops_ccblocks}> <table align="center" cellpadding="0" cellspacing="2">
+                  <tr> 
+                    <td> <div class="blockTitle"><{$block.title}></div>
+                      <div class="blockContent"><{$block.content}></div></td>
+                  </tr>
+                </table>
+                <{/foreach}> 
+         
+              </td>
+            </tr>
+            <tr> 
+              <td id="centerLcolumn"> 
+          
+                <{foreach item=block from=$xoops_clblocks}> <table class="blok" align="center" cellpadding="3" cellspacing="2">
+                  <tr> 
+                    <td> <div class="blockTitle"><{$block.title}></div>
+                      <div class="blockContent"><{$block.content}></div></td>
+                  </tr>
+                </table>
+                <{/foreach}> 
+        
+              </td>
+              <td id="centerRcolumn"> 
+          
+                <{foreach item=block from=$xoops_crblocks}> <table class="blok" align="center" cellpadding="3" cellspacing="2">
+                  <tr> 
+                    <td> <div class="blockTitle"><{$block.title}></div>
+                      <div class="blockContent"><{$block.content}></div></td>
+                  </tr>
+                </table>
+                <{/foreach}> 
+            
+              </td>
+            </tr>
+          </table>
+          <{/if}> 
+     
+          <div id="content"> <{$xoops_contents}> </div>
+          <br /> <br /> <br /> </td>
+        <{if $xoops_showrblock == 1}> 
+        <td width="170" id="rightcolumn"> 
+      
+          <{foreach item=block from=$xoops_rblocks}> <div class="blockTitle"><{$block.title}></div>
+          <div class="blockContent"><{$block.content}></div>
+		  <img src="<{$xoops_imageurl}>images/160.gif" width="160" height="1" alt="" />
+          <{/foreach}> 
+     
+          <br /> <br /> </td>
+        <{/if}> </tr>
+        <tr> 
+          <td colspan="3"></td>
+        </tr>
+      </table>
+	  <div align="center">
+	  <TABLE width="100%" 
+            border=0 cellPadding=0 cellSpacing=0 bgcolor="#F2F4F7">
+              <TBODY>
+              <TR>
+                <TD width=21><IMG 
+                  src="<{$xoops_url}>/themes/ND_Xmas
+/images/alt_sol.gif" 
+                  border=0></TD>
+                <TD align=middle width="100%" 
+                background="<{$xoops_url}>/themes/ND_Xmas
+/images/alt_orta.gif"></TD>
+      <TD width=21><IMG src="<{$xoops_url}>/themes/ND_Xmas
+/images/alt_sag.gif" 
+                  border=0></TD></TR></TBODY></TABLE></div>
+	</td>
+  </tr>
+
+</table>
+<div class="privatnost">
+
+<br />  
+
+  <br />
+<{$xoops_footer}> &nbsp;|&nbsp; <span lang="fr">JamilaCS Osmanlý Theme <a href="http://www.turkxoops.com">Turkxoops</a></span><br />
+</div>
+
+</body>
+</html>
